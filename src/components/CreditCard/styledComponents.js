@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 `
 
 export const CardContainer = styled.div`
@@ -12,6 +15,10 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+    height: 60vh;
+  }
 `
 export const ImageContainer = styled.div`
   background-image: url('https://assets.ccbp.in/frontend/hooks/credit-card-bg.png');
@@ -26,6 +33,11 @@ export const ImageContainer = styled.div`
   padding-left: 30px;
   margin-top: 100px;
   line-height: 2px;
+  @media screen and (max-width: 767px) {
+    width: 85vw;
+    height: 35vh;
+    margin-top: 0px;
+  }
 `
 
 export const YellowContainer = styled.div`
@@ -55,6 +67,10 @@ export const InputContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 40vw;
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+    height: 40vh;
+  }
 `
 export const InputShadowContainer = styled.div`
   display: flex;
@@ -64,6 +80,10 @@ export const InputShadowContainer = styled.div`
   width: 400px;
   height: 250px;
   box-shadow: 1px 1px 5px 5px #c3cad9;
+  @media screen and (max-width: 767px) {
+    width: 80vw;
+    height: 35vh;
+  }
 `
 export const Input = styled.input`
   width: 340px;
@@ -74,6 +94,11 @@ export const Input = styled.input`
   box-shadow: 1px 1px 5px 5px #d3d9e0;
   font-weight: 400;
   padding: 15px;
+  @media screen and (max-width: 767px) {
+    width: 75vw;
+    padding: 8px;
+    font-size: 14px;
+  }
 `
 export const PaymentHead = styled.h1`
   color: #344e7a;
